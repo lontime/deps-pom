@@ -14,6 +14,21 @@
     <dependencies>
       <!-- tools -->
       <dependency>
+        <groupId>io.helidon.common</groupId>
+        <artifactId>helidon-common</artifactId>
+        <version>1.4.10</version>
+      </dependency>
+      <dependency>
+        <groupId>io.helidon.common</groupId>
+        <artifactId>helidon-common-context</artifactId>
+        <version>1.4.10</version>
+      </dependency>
+      <dependency>
+        <groupId>cn.hutool</groupId>
+        <artifactId>hutool-core</artifactId>
+        <version>5.7.7</version>
+      </dependency>
+      <dependency>
         <groupId>io.vavr</groupId>
         <artifactId>vavr</artifactId>
         <version>0.10.4</version>
@@ -22,6 +37,94 @@
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
         <version>30.1.1-jre</version>
+      </dependency>
+      <!-- spring -->
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-commons</artifactId>
+        <version>3.0.3</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-crypto</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-core</artifactId>
+        <version>5.3.9</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jcl</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-beans</artifactId>
+        <version>5.3.9</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-web</artifactId>
+        <version>5.3.9</version>
+      </dependency>
+      <!-- http -->
+      <dependency>
+        <groupId>io.helidon.common</groupId>
+        <artifactId>helidon-common-http</artifactId>
+        <version>1.4.10</version>
+      </dependency>
+      <!-- reactive -->
+      <dependency>
+        <groupId>io.projectreactor</groupId>
+        <artifactId>reactor-core</artifactId>
+        <version>3.4.8</version>
+      </dependency>
+      <!-- security -->
+      <dependency>
+        <groupId>cn.hutool</groupId>
+        <artifactId>hutool-crypto</artifactId>
+        <version>5.7.7</version>
+      </dependency>
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcprov-jdk15to18</artifactId>
+        <version>1.69</version>
+      </dependency>
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcprov-jdk15on</artifactId>
+        <version>1.69</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-crypto</artifactId>
+        <version>5.5.1</version>
+      </dependency>
+      <!-- logging -->
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-jcl</artifactId>
+        <version>5.3.9</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.logging</groupId>
+        <artifactId>jboss-logging</artifactId>
+        <version>3.4.2.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>1.7.32</version>
+      </dependency>
+      <!-- config -->
+      <dependency>
+        <groupId>io.helidon.config</groupId>
+        <artifactId>helidon-config</artifactId>
+        <version>1.4.10</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
