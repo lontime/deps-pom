@@ -10,4 +10,20 @@
   <packaging>pom</packaging>
   <description>dependencies for lontime</description>
 
+  <dependencyManagement>
+    <dependencies>
+      <!-- tools -->
+      <dependency>
+        <groupId>io.vavr</groupId>
+        <artifactId>vavr</artifactId>
+        <version>0.10.4</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>30.1.1-jre</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
 </project>
